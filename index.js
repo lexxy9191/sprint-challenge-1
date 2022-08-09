@@ -288,7 +288,7 @@ function addArtist(array, name, years, genre, nationality, bio) {
   bigArray = [...array];
   bigArray.push(name, years, genre, nationality, bio);
 }
-console.log(artists("Alexia Turner", "1991-2022", "web Design", "American","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur."))
+console.log(addArtist("Alexia Turner", "1991-2022", "web Design", "American","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur."))
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive the artist array as an argument passed from a parameter  
@@ -297,11 +297,14 @@ Use lotsOfArt to do the following:
 🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
 */
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array, amount) {
+ const result = array.filter(checkAmount);
+ function checkAmount(completed){
+  return checkAmount >= 100;
+ }
 }
 
-
+console.log(lotsOfArt(artists, 100));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistInfo to do the following: 
