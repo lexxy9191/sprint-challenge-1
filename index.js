@@ -246,12 +246,12 @@ Use copy to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
 
-
-
+function listOfNames(array) {
+  let nameList = array.map(element => element.name);
+  return nameList;
+  }
+  console.log(listOfNames(artists));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
 1. Receive the artist array as an argument passed from the FIRST parameter
