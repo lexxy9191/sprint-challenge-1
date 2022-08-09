@@ -301,14 +301,16 @@ Use lotsOfArt to do the following:
 🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
 */
 
-function lotsOfArt(array, amount) {
- const result = array.filter(checkAmount);
- function checkAmount(completed){
-  return checkAmount >= 100;
+function lotsOfArt(array) {
+ let newArray = [];
+  for (let i = 0; i < array.length; i++){
+ if (array[i].paintings > 100) {
+ newArray.push(array[i].name);
  }
 }
-
-console.log(lotsOfArt(artists, 100));
+return newArray;
+} 
+console.log('task 7', lotsOfArt(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistInfo to do the following: 
