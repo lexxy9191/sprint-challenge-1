@@ -286,13 +286,9 @@ Use addArtist to do the following:
 
 function addArtist(array, name, years, genre, nationality, bio) {
   bigArray = [...array];
-  bigArray.push("Alexia Turner", "1991-2022", "Web Design", "American", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur.")
-
+  bigArray.push(name, years, genre, nationality, bio);
 }
-
-
-
-
+console.log(artists("Alexia Turner", "1991-2022", "web Design", "American","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur."))
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive the artist array as an argument passed from a parameter  
