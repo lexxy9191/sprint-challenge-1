@@ -246,12 +246,12 @@ Use copy to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-
 function listOfNames(array) {
   let nameList = array.map(element => element.name);
   return nameList;
   }
   console.log(listOfNames(artists));
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
 1. Receive the artist array as an argument passed from the FIRST parameter
@@ -261,13 +261,15 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
-
+function removeArtists(array, index) {
+  smallArray = [...array];
+  smallArray.splice(index, 1); 
+   }
+   console.log(removeArtists(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+
 Use addArtist to do the following: 
 1. Receive the the artist array as an argument passed from the FIRST parameter 
 2. Recieve a string (name), a string (years), a string (genre), a string (nationality), and a string (bio) as arguments passed from the SECOND, THIRD, FOURTH, FIFTH, and SIXTH parameters, repsectively.
